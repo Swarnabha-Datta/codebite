@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #050505, #161516, #000000);
+  background-size: 400% 400%; /* Makes background larger for smooth animation */
+  transition: all 1s ease-in-out; /* Smooth transition for hover */
+  z-index: -4;
+}
+
+/* Animate the background and blur on hover */
+
+
+/* Optional: Styling for text or content on the page */
+.content {
+  font-size: 2em;
+  color: white;
+  z-index: 1; /* Ensures content stays visible above blurred background */
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(./Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(./Inter-Regular.ttf);
+}
+
+
+
+
+.container {
+    width: 400%;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+nav {
+    margin-right: 20%;
+    overflow: hidden;
+    height: 10%;
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px 25px;
+    font-family: 'bold';
+}
+
+nav ul li a {
+    color: #080505;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+#card{
+  /* background-color: red; */
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    padding-top: 100%;
+}
+
+/* #leftpg {
+    position: absolute;
+    z-index: 3;
+    background-color: #f2f2f2;
+    height: 180vh;
+    width: 25%;
+    margin-left: 0%;
+     padding-top: 30px; 
+    padding-left: 30px;
+    border-radius: 50px 50px 0px 0px;
+} */
+
+/* #leftpg img {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    opacity: 0.6;
+    scale: 0.7;
+    
+    margin-left: 80%;
+} */
+/* #leftpgtxt h2{
+    margin-top: 50px;
+    font-size: 23px;
+    font-family: 'regular';
+    color: #000000a9;
+} */
+.container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container h1{
+    font-family: 'regular';
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .container h2{
+    font-family: 'regular';
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  
+  #taskInput {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+  }
+  #input {
+    border-radius: 50px;
+  }
+  
+  #addButton {
+    padding: 8px 12px;
+    background-color: #19514e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  #addButton:hover {
+    background-color: #1781b6;
+  }
+  
+  #taskList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+  color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .taskItem.completed {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.614);
+  }
+  #bgcard{
+/* z-index: -3; */
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    margin-right: 40px;
+  }
+
+
+#header{
+
+}
